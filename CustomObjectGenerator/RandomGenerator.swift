@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class RandomGenerator {
+    
+   static func GenerateArray(n: Int) -> [Int] {
+        return (0..<n).map{ _ in Int(arc4random_uniform(100) + 1) }
+    }
+    
+}
+
